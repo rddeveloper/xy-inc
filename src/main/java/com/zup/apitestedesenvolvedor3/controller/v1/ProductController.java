@@ -14,7 +14,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(name = "/api/v1/products")
+@RequestMapping("/api/v1/products")
 @Tag(name = "Products")
 public class ProductController {
 
@@ -48,15 +48,15 @@ public class ProductController {
 
     @PutMapping(value="{id}")
     @Operation(description = "Endpoint to update product", summary = "Update Product")
-    public ResponseEntity<ProductDTO> create(@PathVariable("id") Long id,
+    public ResponseEntity<Void> create(@PathVariable("id") Long id,
                                              @Valid @RequestBody ProductDTO productDTO) {
         Product product = productService.update(id, new ProductDTO().convertDTOToEntity(productDTO));
-        return new ResponseEntity<>(new Product().convertEntityToDTO(product), HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @DeleteMapping(value="{id}")
     @Operation(description = "Endpoint to delete product", summary = "Delete Product")
-    public ResponseEntity<ProductDTO> create(@PathVariable("id") Long id) {
+    public ResponseEntity<Void> create(@PathVariable("id") Long id) {
         productService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
