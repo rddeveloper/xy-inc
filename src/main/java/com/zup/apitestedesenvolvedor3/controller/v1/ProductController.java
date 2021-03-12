@@ -50,7 +50,7 @@ public class ProductController {
     @Operation(description = "Endpoint to update product", summary = "Update Product")
     public ResponseEntity<Void> create(@PathVariable("id") Long id,
                                              @Valid @RequestBody ProductDTO productDTO) {
-        Product product = productService.update(id, new ProductDTO().convertDTOToEntity(productDTO));
+        productService.update(id, new ProductDTO().convertDTOToEntity(productDTO));
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
