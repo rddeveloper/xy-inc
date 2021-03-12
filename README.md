@@ -35,14 +35,12 @@ price:decimal, category:string
 * DevTools
 * OpenJDK
 
-## :arrow_forward: Como executar o projeto?
-* Primeiramente clone o projeto do [repositório](https://github.com/rddeveloper/xy-inc/), em seguida vá para o projeto clonado e instale as dependências( o projeto esta utilizando maven para centralizar a configuração das dependências), abra o projeto por alguma IDE( foi utilizado o IntelliJ IDEA (versão Ultimate Edition) para desenvolver a aplicação), rode o projeto pelo arquivo ApiTesteDesenvolvedor3Application.java que esta dentro de ```./src/main/java/com/zup/apitestedesenvolvedor3```. Simples assim!
-
 ## :floppy_disk: Base de Dados
 * Foi utilizado Postgres como banco de dados junto com a ferramenta Flyway para fazer o controle de versionamento do mesmo, e o H2 para realizar os Testes Unitários para facilitar na hora de rodar o projeto localmente.
 
-
-
+## :arrow_forward: Como executar o projeto?
+* Primeiramente clone o projeto do [repositório](https://github.com/rddeveloper/xy-inc/), em seguida vá para o projeto clonado e instale as dependências( o projeto esta utilizando maven para centralizar a configuração das dependências), abra o projeto por alguma IDE( foi utilizado o IntelliJ IDEA (versão Ultimate Edition) para desenvolver a aplicação), rode o projeto pelo arquivo ApiTesteDesenvolvedor3Application.java que esta dentro de ```./src/main/java/com/zup/apitestedesenvolvedor3```. Simples assim!
+* (Obs) configure o properties apontando para o banco de dados da sua maquina, pois no projeto estão setadas as variáveis de conexões do postgres usadas para denvolver a aplicação como a url, o username e o password.
 
 ## :clipboard: Testando os serviços
 * Realizar a chamada dos serviços. 
