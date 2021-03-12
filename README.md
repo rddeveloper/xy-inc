@@ -8,6 +8,37 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
+## :warning: Descrição do problema
+
+Temos o seguinte cenário. Um desenvolvedor mobile está desenvolvendo uma app que
+precisa de um backend simples, mas ele não tem conhecimento para desenvolver esse
+backend.
+
+A Zup quer resolver o problema desse desenvolvedor. A idéia é que através de uma tela
+simples o desenvolvedor consiga criar um novo “Modelo” e inserir dados (instâncias do
+“Modelo”) para serem consumidos pela app mobile.
+
+## :warning: Dependências
+* spring Boot Web
+* JPA
+* Postgres
+* H2 Database
+* Flyway
+* SpringDoc OpenApi
+* Junit
+* ModelMapper
+* DevTools
+* OpenJDK
+
+## :arrow_forward: Como executar o projeto?
+* Primeiramente clone o projeto do [repositório](https://github.com/rddeveloper/xy-inc/), em seguida vá para o projeto clonado e instale as dependências( o projeto esta utilizando maven para centralizar a configuração das dependências), abra o projeto por alguma IDE( foi utilizado o IntelliJ IDEA (versão Ultimate Edition) para desenvolver a aplicação), rode o projeto pelo arquivo ApiTesteDesenvolvedor3Application.java que esta dentro de ```./src/main/java/com/zup/apitestedesenvolvedor3```. Simples assim!
+
+## :floppy_disk: Base de Dados
+* Foi utilizado Postgres como banco de dados junto com a ferramenta Flyway para fazer o controle de versionamento do mesmo, e o H2 para realizar os Testes Unitários para facilitar na hora de rodar o projeto localmente.
+
+
+
+
 ## :clipboard: Testando os serviços
 * Realizar a chamada dos serviços. 
 Para testar os serviços utilize um browser uma outra ferramenta como o Postman ou o Insomnia ou o proprio swagger que esta configurado na aplicação.
@@ -90,7 +121,7 @@ Para testar os serviços utilize um browser uma outra ferramenta como o Postman 
 * Esse endpoint não tem retorno (204-NO_CONTENT)
 
 
-## Documentação Swagger
+## :clipboard: Documentação Swagger
 
 ```sh
 documentação dos serviços. URL http://localhost:8080/swagger-ui.html 
@@ -99,7 +130,7 @@ documentação dos serviços. URL http://localhost:8080/swagger-ui.html
 
 * (Obs) se você acessar o diretório htt://localhost:8080, a aplicação esta configurada para leva-lo direto ao diretório base do swagger-ui.html.
 
-## Testes Unitários
+## :arrows_counterclockwise: Testes Unitários
 * a aplicação esta configurada para realizar tests unitários, assim podendo realizar os testes mais precisos em cada método. A classe de exemplo (ProductRepositoryTest.java) esta dentro do package repository no diretório de test ```./src/test/java/com/zup/apitestedensevolvedor3/repository ```.
 * com o uso do JUnit, é permitido testar o método diretamente, assim sendo muito mais rápido.
 
@@ -126,21 +157,3 @@ documentação dos serviços. URL http://localhost:8080/swagger-ui.html
   ```
 
 * (Obs) a aplicação está utilizando uma configuração especifica  usando o banco H2 Databases para realizar os teste unitarios como inserts genéricos.
-
-## :warning: Dependências
-* spring Boot Web
-* JPA
-* Postgres
-* H2 Database
-* Flyway
-* SpringDoc OpenApi
-* Junit
-* ModelMapper
-* DevTools
-* OpenJDK
-
-## :arrow_forward: Como executar o projeto?
-* Primeiramente clone o projeto do [repositório](https://github.com/rddeveloper/xy-inc/), em seguida vá para o projeto clonado e instale as dependências( o projeto esta utilizando maven para centralizar a configuração das dependências), abra o projeto por alguma IDE( foi utilizado o IntelliJ IDEA (versão Ultimate Edition) para desenvolver a aplicação), rode o projeto pelo arquivo ApiTesteDesenvolvedor3Application.java que esta dentro de ```./src/main/java/com/zup/apitestedesenvolvedor3```. Simples assim!
-
-## :floppy_disk: Base de Dados
-* Foi utilizado Postgres como banco de dados junto com a ferramenta Flyway para fazer o controle de versionamento do mesmo, e o H2 para realizar os Testes Unitários para facilitar na hora de rodar o projeto localmente.
