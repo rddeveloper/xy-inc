@@ -10,7 +10,7 @@
 
 ## :clipboard: Testando os serviços
 * Realizar a chamada dos serviços. 
-Para testar os serviços utilize um browser uma outra ferramenta como o Postman ou o Insomminia ou o proprio swagger que esta configurado na aplicação.
+Para testar os serviços utilize um browser uma outra ferramenta como o Postman ou o Insomnia ou o proprio swagger que esta configurado na aplicação.
 ### :arrows_counterclockwise: Rota para cadastro de um novo produto
 * ```http://localhost:8080/api/v1/products```
 * POST
@@ -97,9 +97,11 @@ documentação dos serviços. URL http://localhost:8080/swagger-ui.html
 
 ```
 
+* (Obs) se você acessar o diretório htt://localhost:8080, a aplicação esta configurada para leva-lo direto ao diretório base do swagger-ui.html.
+
 ## Testes Unitários
 * a aplicação esta configurada para realizar tests unitários, assim podendo realizar os testes mais precisos em cada método. A classe de exemplo (ProductRepositoryTest.java) esta dentro do package repository no diretório de test ```./src/test/java/com/zup/apitestedensevolvedor3/repository ```.
-* com o uso do JUnit, é permitido testar o método diretamente, assim sendo muito mais rápido
+* com o uso do JUnit, é permitido testar o método diretamente, assim sendo muito mais rápido.
 
 * testando o metodo de salvar produto direto na camada de repository
   ```java
@@ -123,7 +125,7 @@ documentação dos serviços. URL http://localhost:8080/swagger-ui.html
 
   ```
 
-* (Obs) se você acessar o diretório htt://localhost:8080, a aplicação esta configurada para leva-lo direto ao diretório base do swagger-ui.html.
+* (Obs) a aplicação está utilizando uma configuração especifica  usando o banco H2 Databases para realizar os teste unitarios como inserts genéricos.
 
 ## :warning: Dependências
 * spring Boot Web
