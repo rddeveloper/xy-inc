@@ -18,6 +18,11 @@ A Zup quer resolver o problema desse desenvolvedor. A idéia é que através de 
 simples o desenvolvedor consiga criar um novo “Modelo” e inserir dados (instâncias do
 “Modelo”) para serem consumidos pela app mobile.
 
+Um caso de uso de exemplo seria:
+Desenvolvedor cria um novo “Modelo” com o nome “Products"
+Desenvolvedor configura os atributos do modelo: name:string, description:text,
+price:decimal, category:string
+
 ## :warning: Dependências
 * spring Boot Web
 * JPA
